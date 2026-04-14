@@ -1,4 +1,4 @@
-Write a Python script with these functions:
+"""  Write a Python script with these functions:
   add(a, b), subtract(a, b), multiply(a, b), divide(a, b)
 
 Then write a main() function that:
@@ -7,4 +7,4 @@ Then write a main() function that:
   - Calls the right function and prints the result
   - Handles division by zero with a friendly message
 
-Bonus: wrap it in a loop so the user can keep calculating.
+Bonus: wrap it in a loop so the user can keep calculating. """ 
