@@ -1,0 +1,10 @@
+Write a Python script with these functions:
+  add(a, b), subtract(a, b), multiply(a, b), divide(a, b)
+
+Then write a main() function that:
+  - Asks the user to pick an operation (1-4)
+  - Asks for two numbers
+  - Calls the right function and prints the result
+  - Handles division by zero with a friendly message
+
+Bonus: wrap it in a loop so the user can keep calculating.
