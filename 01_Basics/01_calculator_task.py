@@ -1,10 +1,48 @@
-"""  Write a Python script with these functions:
-  add(a, b), subtract(a, b), multiply(a, b), divide(a, b)
+def add(a, b):
+  return a + b
+  
+def subtract(a, b):
+  return a - b
+  
+def multiply(a, b):
+  return a * b
+  
+def divide(a, b):
+  return a / b
 
-Then write a main() function that:
-  - Asks the user to pick an operation (1-4)
-  - Asks for two numbers
-  - Calls the right function and prints the result
-  - Handles division by zero with a friendly message
+def main():
+  while True:
+     print("Pick an operation 1-4")
+     print("1. Add")
+     print("2. Subtract")
+     print("3. Multiply")
+     print("4. Divide")
 
-Bonus: wrap it in a loop so the user can keep calculating. """ 
+def main():
+    while True:
+        print("Pick an operation 1-4")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+
+        choice = input("Enter choice: ")
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+
+        if choice == "1":
+            print(add(a, b))
+        elif choice == "2":
+            print(subtract(a, b))
+        elif choice == "3":
+            print(multiply(a, b))
+        elif choice == "4":
+            if b == 0:
+                print("Error: can't divide by zero")
+            else:
+                print(divide(a, b))
+        else:
+            print("Invalid choice, try again")
+
+if __name__ == "__main__":
+    main()
